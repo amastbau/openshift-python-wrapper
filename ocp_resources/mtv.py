@@ -143,7 +143,7 @@ class MTV:
             condition_type=self.Status.SUCCEEDED,
             condition_message=self.condition_message_succeeded,
             condition_status=self.Condition.Status.TRUE,
-            timeout=timeout,
+            wait_timeout=timeout,
         )
 
     @property

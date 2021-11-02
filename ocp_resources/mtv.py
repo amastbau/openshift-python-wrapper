@@ -130,7 +130,7 @@ class MTV:
             )
             raise
 
-    def wait_for_condition_ready(self, timeout=600):
+    def wait_for_condition_ready(self, timeout=1):
         self.wait_for_resource_status(
             condition_message=self.condition_message_ready,
             condition_status=self.Condition.Status.TRUE,
@@ -138,7 +138,7 @@ class MTV:
             timeout=timeout,
         )
 
-    def wait_for_condition_succeeded(self, timeout=600):
+    def wait_for_condition_succeeded(self, timeout=1):
         self.wait_for_resource_status(
             condition_type=self.Status.SUCCEEDED,
             condition_message=self.condition_message_succeeded,

@@ -135,7 +135,7 @@ class MTV:
             condition_message=self.condition_message_ready,
             condition_status=self.Condition.Status.TRUE,
             condition_type=self.Condition.READY,
-            timeout=timeout,
+            wait_timeout=timeout,
         )
 
     def wait_for_condition_succeeded(self, timeout=600):
